@@ -1,0 +1,29 @@
+# AdHoc Reporting Database - Table Overview
+
+- Users: Module-local user accounts, credentials, and activation state.
+- Roles: Role catalog such as Admin, IT, ReportUser.
+- Permissions: Permission catalog used in policy-based authorization.
+- UserRoles: Many-to-many mapping between users and roles.
+- RolePermissions: Many-to-many mapping between roles and permissions.
+- RefreshTokens: Refresh token storage for JWT session renewal.
+- Datasources: Reporting datasource definitions (Query/View/StoredProcedure).
+- DatasourceParameters: Parameter metadata for datasource execution UI and API.
+- DatasourceColumnsMetadata: Allowed output columns metadata for controlled rendering.
+- DatasourceRoleAccess: Role-level datasource permissions.
+- DatasourceUserAccess: User-level datasource permissions override.
+- Reports: Saved ad-hoc report definitions and ownership.
+- ReportColumns: Configured visible columns and ordering.
+- ReportFilters: Saved filter conditions for report definitions.
+- ReportSorts: Saved sorting rules.
+- ReportGroups: Saved grouping dimensions.
+- ReportAggregations: Saved aggregation definitions.
+- ReportParameters: Saved report parameter values and types.
+- ReportRoleAccess: Role-level report sharing and access rights.
+- ReportUserAccess: User-level report sharing and access rights.
+- ReportBranding: Report-specific branding, header, footer, and watermark settings.
+- AuditLogs: Security and business action audit trail.
+- SystemSettings: Configurable module behavior and limits.
+- DummyEmployees: Dummy data source table for testing employee reports.
+- DummySales: Dummy data source table for testing sales reports.
+- vw_EmployeeList: Reporting view over DummyEmployees.
+- sp_Report_SalesByDate: Safe reporting stored procedure example.

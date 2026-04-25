@@ -1,0 +1,28 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.log
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets / config overrides
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
